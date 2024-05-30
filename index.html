@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>news app</title>
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex ">
+            <a href="#"  onclick="reload()">
+                <img class="logo" src="logo-image.jpeg" alt="News-Daily-Logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="Indian-sports" onclick="onNavItemClick('Indian-sports')">Sports</li>
+                    <li class="hover-link nav-item" id="Indian-business" onclick="onNavItemClick('Indian-business')">Business</li>
+                    <li class="hover-link nav-item" id="indian-health" onclick="onNavItemClick('indian-health')">Health</li>
+                    <li class="hover-link nav-item" id="indian-politics" onclick="onNavItemClick('indian-politics')">Politics</li>
+                    <li class="hover-link nav-item" id="indian-finance" onclick="onNavItemClick('indian-finance')">Finance</li>    
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" class="news-input" id="search-text" placeholder="e.g. Science">
+                <button id="search-button"class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="cards-container container flex" id="cards-container" >
+            
+        </div>
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img id="news-img" src="beach.jpg" height="200px" width="400px" alt="news img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is title</h3>
+                <h6 id="news-source" class="news-source">End Gadget 26/08/2023</h6>
+                <p id="news-desc" class="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed possimus officiis accusantium saepe exercitationem officia assumenda molestiae? Ipsum similique reprehenderit omnis aliquam repudiandae ratione ipsa in, illum ut perspiciatis doloremque.</p>
+            </div>
+        </div>
+    </template>
+    <script src="script.js"></script>
+</body>
+</html>
